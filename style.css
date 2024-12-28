@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    gap: 0rem;
+    background-color: #fefefe;
+}
+
+.side {
+    width: 380px;
+    height: 100vh;
+    overflow: hidden;
+    background-color: rgba(10, 10, 20, 0.9);
+}
+
+.side .col {
+    width: 100%;
+    padding: 2rem 0%;
+    min-height: 240px;
+}
+
+.logo img {
+    height: 120px;
+    width: fit-content;
+    object-fit: cover;
+}
+
+.logo,
+.desc {
+    padding: 0rem 2rem;
+    margin-top: -2rem;
+}
+
+.desc p {
+    font-size: 16px;
+    line-height: 23px;
+    color: #fff;
+}
+
+.main {
+    width: calc(100% - 380px);
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.8rem;
+}
+
+.main .heading {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 480px;
+    padding: 1rem 0rem;
+}
+
+.main .heading h1 {
+    font-size: 1.6rem;
+    color: #000;
+
+}
+
+.main .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.4rem;
+    width: 100%;
+    max-width: 480px;
+}
+
+.main .btn {
+    width: 100%;
+    padding: 1.2rem 2.8rem;
+    border-radius: 3rem;
+    border: 2px solid #1111;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+    cursor: pointer;
+    transition: all 1s;
+    font-family: 'Roboto Serif', sans-serif !important;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 600;
+    color: #000;
+}
+
+.main .btn span {
+
+    font-family: 'Roboto Serif', sans-serif !important;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 600;
+    color: #000;
+}
+
+.main .btn:hover {
+    background-color: rgba(64, 1, 1, 0.1);
+}
+
+.main .or {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.main .or::after {
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #0001;
+    z-index: 0;
+}
+
+.main .or span {
+    font-size: 14px;
+    line-height: 14px;
+    color: #777;
+    padding: 0px 5px;
+    text-align: center;
+    background-color: #fefefe;
+    width: fit-content;
+    z-index: 10;
+}
+
+.main .form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+    width: 100%;
+}
+
+.main .field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    width: 100%;
+}
+
+.main .field label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.5rem 0rem;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+}
+
+.main .field label .forgot {
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 400;
+    color: #777;
+    padding: 0rem 5px;
+}
+
+.main .field .input {
+    width: 100%;
+    padding: 1.3rem 1.4rem;
+    font-size: 14.5px;
+    line-height: 15px;
+    font-weight: 400;
+    color: #000;
+    outline: none;
+    border-radius: 6px;
+    border: 1px solid #0004;
+    transition: all 1s;
+}
+
+.main .field .input:hover {
+    box-shadow: 0 0 20px rgba(64, 1, 1, 0.3);
+}
+
+
+.main .btn-signin {
+    width: 100% !important;
+    background-color: #000 !important;
+    color: #fff !important;
+}
+
+.main .btn-signin:hover {
+    background-color: #000e !important;
+}
+
+.main .para {
+    width: 100%;
+    min-width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem 0rem;
+    padding-top: 1.4rem;
+   
+
+}
+.main .para p{
+    font-size: 15px;
+    line-height: 15px;
+    color: #000;
+    text-decoration: none;
+
+}
+.main .para .link {
+    font-size: 14px;
+    line-height: 15px;
+    color: #444;
+    text-decoration: underline;
+    transition: all 1s;
+}
+.main .para .link:hover {
+    color: rgba(64, 1, 1, 0.83);
+}
+
+@media (max-width:780px) {
+    .side{
+        width: 220px;
+    }
+    .main {
+        width: calc(100% - 220px);
+        padding: 2rem ;
+    }
+}
+@media (max-width:540px) {
+    .side{
+        width: 0px;
+        overflow: hidden;
+    }
+    .main {
+        width: 100%;
+        padding: 2rem  1rem;
+    }
+
+    .main .btn {
+        width: 100%;
+        padding: 1.2rem 1.6rem;
+        font-size: 14px;
+        
+    }
+}
